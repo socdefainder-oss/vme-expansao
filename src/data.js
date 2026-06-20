@@ -138,6 +138,27 @@ export const PROFESSORS = [
     initials: 'EB',
     bio: 'PhD em Administração de Negócios, mestre em Educação e em Neurociências, especialista em Gestão Estratégica de Pessoas e Negócios. Autora best-seller, advisor e empresária, é referência em Neurogestão e atua como consultora empresarial na implantação de processos e no desenvolvimento de pessoas.',
   },
+  {
+    name: 'Rafael Mendes',
+    role: 'Especialista em processos comerciais',
+    image: null,
+    initials: 'RM',
+    bio: 'Professor convidado responsável pela aula sobre como estruturar uma máquina de vendas que funcione além do dono — funil, abordagem, follow-up e conversão com método. Minibiografia completa em breve.',
+  },
+  {
+    name: 'Gerson',
+    role: 'Especialista em processos e operação',
+    image: null,
+    initials: 'GE',
+    bio: 'Professor convidado responsável pela aula sobre estruturação de processos para a empresa funcionar sem depender do dono — mapear, documentar e delegar rotinas. Minibiografia completa em breve.',
+  },
+  {
+    name: 'Clecio Albino',
+    role: 'Especialista em gestão e indicadores',
+    image: null,
+    initials: 'CA',
+    bio: 'Professor convidado responsável pela aula de gestão na prática: rotinas, metas, indicadores e clareza operacional sem burocracia. Minibiografia completa em breve.',
+  },
 ]
 
 export const FOR_WHO = [

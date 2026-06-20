@@ -8,14 +8,14 @@ function Portrait({ professor }) {
   const showImage = professor.image && !errored
 
   return (
-    <div className="relative aspect-[4/5] w-full overflow-hidden bg-gradient-to-br from-ink-700 to-ink-850 sm:aspect-auto sm:h-full">
+    <div className="relative aspect-[4/5] w-full self-start overflow-hidden bg-gradient-to-br from-ink-700 to-ink-850">
       {showImage ? (
         <img
           src={professor.image}
           alt={professor.name}
           loading="lazy"
           onError={() => setErrored(true)}
-          className="h-full w-full object-cover object-top"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         />
       ) : (
         <div className="flex h-full w-full items-center justify-center">
@@ -24,7 +24,7 @@ function Portrait({ professor }) {
           </span>
         </div>
       )}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/80 via-transparent to-transparent sm:bg-gradient-to-r sm:from-transparent sm:to-ink-850/0" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/40 via-transparent to-transparent" />
     </div>
   )
 }
