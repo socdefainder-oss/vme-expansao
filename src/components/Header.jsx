@@ -4,6 +4,7 @@ import { INSCRICAO_LINK } from '../data.js'
 const NAV = [
   { label: 'O que é', href: '#o-que-e' },
   { label: 'Aulas', href: '#aulas' },
+  { label: 'Professores', href: '#professores' },
   { label: 'Como funciona', href: '#como-funciona' },
   { label: 'Investimento', href: '#oferta' },
   { label: 'FAQ', href: '#faq' },

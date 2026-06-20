@@ -108,6 +108,38 @@ export const CLASSES = [
   },
 ]
 
+// Professores convidados. image: caminho em /public (null = mostra iniciais).
+export const PROFESSORS = [
+  {
+    name: 'Jairo Manhães',
+    role: 'Cientista da religião, teólogo e pastor',
+    image: null,
+    initials: 'JM',
+    bio: 'Cientista da religião, teólogo, terapeuta, empresário e pastor. Casado há 31 anos com Cassiane Guimarães, é pai de Jay, Caio e Joshua. Líder da Igreja ADAlpha, em Alphaville (SP), atua como referência internacional em ensino bíblico, excelência ministerial e impacto social. Também é escritor, maestro, produtor musical e cantor. Bacharel em Teologia e pós-graduado em Terapia Pastoral, é mestre em Ciências da Religião, recebeu o título de Doutor em Missão Universal (Ph.I.) e tem curso livre em Arqueologia Bíblica pela Universidade Hebraica de Jerusalém. Aprimorou sua visão de liderança em formações internacionais, incluindo a The Napoleon Hill Foundation (Indiana, EUA). Sua missão é formar líderes, fortalecer famílias e despertar uma geração para viver os princípios eternos do Reino de Deus.',
+  },
+  {
+    name: 'Daniel Brunet',
+    role: 'Jornalista e mentor de posicionamento',
+    image: '/professores/daniel-brunet.jpeg',
+    initials: 'DB',
+    bio: 'Jornalista e mentor de posicionamento. Escritor best-seller e especialista em narrativa e storytelling, ajuda as pessoas a se posicionarem dentro e fora das redes. É pós-graduado em Cinema Documentário (FGV) e em Análise de Políticas Públicas pelo Instituto de Economia da UFRJ.',
+  },
+  {
+    name: 'Cleiton Pinheiro',
+    role: 'Empresário, escritor e mentor',
+    image: '/professores/cleiton-pinheiro.jpeg',
+    initials: 'CP',
+    bio: 'Empresário, escritor e mentor atuando na área do desenvolvimento humano. Com mais de 20 anos de experiência em gestão de pessoas e negócios, sua trajetória une expertise acadêmica e prática. Graduado em Gestão de Pessoas, MBA em Gestão Estratégica de Negócios e com atuação em Gestão Emocional, orienta e capacita líderes e inspira indivíduos e organizações no crescimento e expansão.',
+  },
+  {
+    name: 'Drª Érica Belon',
+    role: 'PhD em Administração · referência em Neurogestão',
+    image: '/professores/erica-belon.jpeg',
+    initials: 'EB',
+    bio: 'PhD em Administração de Negócios, mestre em Educação e em Neurociências, especialista em Gestão Estratégica de Pessoas e Negócios. Autora best-seller, advisor e empresária, é referência em Neurogestão e atua como consultora empresarial na implantação de processos e no desenvolvimento de pessoas.',
+  },
+]
+
 export const FOR_WHO = [
   'Já têm negócio, mas sentem que crescer virou mais pesado do que deveria.',
   'Querem vender mais, mas sem depender apenas de indicação.',
@@ -193,6 +225,10 @@ export const FAQ = [
   {
     q: 'É uma palestra motivacional?',
     a: 'Não. O VME Expansão é uma escola prática de negócios, com conteúdo aplicável, estratégico e fundamentado em princípios.',
+  },
+  {
+    q: 'Quem serão seus professores?',
+    a: 'O VME Expansão reúne professores convidados que vivem o mercado — entre eles Jairo Manhães, Daniel Brunet, Cleiton Pinheiro e a Drª Érica Belon. Você encontra a trajetória completa de cada um na seção "Professores convidados" desta página.',
   },
   {
     q: 'Tem garantia?',

@@ -4,6 +4,7 @@ import PainPoints from './components/PainPoints.jsx'
 import Diagnosis from './components/Diagnosis.jsx'
 import WhatIs from './components/WhatIs.jsx'
 import Classes from './components/Classes.jsx'
+import Professors from './components/Professors.jsx'
 import HowItWorks from './components/HowItWorks.jsx'
 import Audience from './components/Audience.jsx'
 import Benefits from './components/Benefits.jsx'
@@ -24,6 +25,7 @@ export default function App() {
         <Diagnosis />
         <WhatIs />
         <Classes />
+        <Professors />
         <HowItWorks />
         <Audience />
         <Benefits />
