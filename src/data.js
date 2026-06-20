@@ -3,7 +3,7 @@
 // Edite aqui textos, aulas, preço e o link de inscrição.
 // =====================================================================
 
-export const INSCRICAO_LINK = '#LINK_DE_INSCRICAO'
+export const INSCRICAO_LINK = 'https://institutoalphamind.vercel.app/'
 
 export const BRAND = {
   name: 'VME EXPANSÃO',
