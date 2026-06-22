@@ -40,7 +40,9 @@ export default function Offer() {
               </p>
 
               <div className="mt-8">
-                <CTAButton href={INSCRICAO_LINK} className="w-full" />
+                <CTAButton href={INSCRICAO_LINK} className="w-full">
+                  Clique aqui e faça a inscrição!
+                </CTAButton>
               </div>
               <p className="mt-4 flex items-center justify-center gap-1.5 text-sm text-white/45">
                 <Lock className="h-3.5 w-3.5" /> Inscrição segura. Vagas limitadas.
