@@ -12,9 +12,11 @@ import ImpactPhrase from './components/ImpactPhrase.jsx'
 import Offer from './components/Offer.jsx'
 import Faq from './components/Faq.jsx'
 import Footer from './components/Footer.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import TermsOfUse from './pages/TermsOfUse.jsx'
 import { INSCRICAO_LINK } from './data.js'
 
-export default function App() {
+function Home() {
   return (
     <div className="relative min-h-screen bg-ink-900">
       <Header />
@@ -45,4 +47,13 @@ export default function App() {
       </div>
     </div>
   )
+}
+
+export default function App() {
+  // Roteamento simples por caminho (a Vercel serve index.html em qualquer rota — SPA).
+  const path = window.location.pathname.replace(/\/+$/, '') || '/'
+
+  if (path === '/politica-de-privacidade') return <PrivacyPolicy />
+  if (path === '/termos-de-uso') return <TermsOfUse />
+  return <Home />
 }

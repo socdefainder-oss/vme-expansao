@@ -5,6 +5,19 @@
 
 export const INSCRICAO_LINK = 'https://institutoalphamind.vercel.app/'
 
+// Dados do controlador / responsável legal (usados nas páginas legais).
+export const COMPANY = {
+  name: 'Instituto AlphaMind',
+  product: 'VME Expansão',
+  site: 'https://institutoalphamind.vercel.app/',
+  siteLabel: 'institutoalphamind.vercel.app',
+  address: 'Avenida Juruá, 376, Alphaville, Barueri/SP',
+  whatsapp: '(11) 91930-3765',
+  email: '[e-mail oficial a definir]',
+  forum: 'Comarca de Barueri, Estado de São Paulo',
+  lastUpdated: '22 de junho de 2026',
+}
+
 export const BRAND = {
   name: 'VME EXPANSÃO',
   institute: 'Instituto AlphaMind',

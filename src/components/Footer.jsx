@@ -59,12 +59,12 @@ export default function Footer() {
             <p className="text-xs font-semibold uppercase tracking-wider text-white/50">Institucional</p>
             <ul className="mt-5 space-y-3 text-sm text-white/55">
               <li>
-                <a href="#" className="transition-colors hover:text-gold">
+                <a href="/politica-de-privacidade" className="transition-colors hover:text-gold">
                   Política de Privacidade
                 </a>
               </li>
               <li>
-                <a href="#" className="transition-colors hover:text-gold">
+                <a href="/termos-de-uso" className="transition-colors hover:text-gold">
                   Termos de Uso
                 </a>
               </li>
