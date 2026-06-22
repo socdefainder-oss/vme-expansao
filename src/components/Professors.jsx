@@ -18,9 +18,10 @@ function Portrait({ professor }) {
           className="absolute inset-0 h-full w-full object-cover object-top"
         />
       ) : (
-        <div className="flex h-full w-full items-center justify-center">
-          <span className="font-serif text-5xl font-semibold text-gold/40">
-            {professor.initials}
+        <div className="flex h-full w-full items-center justify-center px-3">
+          <span className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-white/35">
+            Foto
+            <br />a confirmar
           </span>
         </div>
       )}
@@ -49,7 +50,9 @@ export default function Professors() {
               <Portrait professor={professor} />
               <div className="flex flex-col p-7">
                 <h3 className="text-xl font-semibold text-white">{professor.name}</h3>
-                <p className="mt-1.5 text-sm font-medium text-gold">{professor.role}</p>
+                {professor.role && (
+                  <p className="mt-1.5 text-sm font-medium text-gold">{professor.role}</p>
+                )}
                 <div className="mt-4 h-px w-10 bg-gold/40" />
                 <p className="mt-4 text-[14px] leading-relaxed text-white/60">{professor.bio}</p>
               </div>

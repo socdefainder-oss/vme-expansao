@@ -8,7 +8,6 @@ import Professors from './components/Professors.jsx'
 import HowItWorks from './components/HowItWorks.jsx'
 import Audience from './components/Audience.jsx'
 import Benefits from './components/Benefits.jsx'
-import Testimonials from './components/Testimonials.jsx'
 import ImpactPhrase from './components/ImpactPhrase.jsx'
 import Offer from './components/Offer.jsx'
 import Faq from './components/Faq.jsx'
@@ -29,7 +28,6 @@ export default function App() {
         <HowItWorks />
         <Audience />
         <Benefits />
-        <Testimonials />
         <ImpactPhrase />
         <Offer />
         <Faq />

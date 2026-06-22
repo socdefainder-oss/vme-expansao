@@ -113,7 +113,7 @@ export const PROFESSORS = [
   {
     name: 'Jairo Manhães',
     role: 'Cientista da religião, teólogo e pastor',
-    image: null,
+    image: '/professores/jairo-manhaes.png',
     initials: 'JM',
     bio: 'Cientista da religião, teólogo, terapeuta, empresário e pastor. Casado há 31 anos com Cassiane Guimarães, é pai de Jay, Caio e Joshua. Líder da Igreja ADAlpha, em Alphaville (SP), atua como referência internacional em ensino bíblico, excelência ministerial e impacto social. Também é escritor, maestro, produtor musical e cantor. Bacharel em Teologia e pós-graduado em Terapia Pastoral, é mestre em Ciências da Religião, recebeu o título de Doutor em Missão Universal (Ph.I.) e tem curso livre em Arqueologia Bíblica pela Universidade Hebraica de Jerusalém. Aprimorou sua visão de liderança em formações internacionais, incluindo a The Napoleon Hill Foundation (Indiana, EUA). Sua missão é formar líderes, fortalecer famílias e despertar uma geração para viver os princípios eternos do Reino de Deus.',
   },
@@ -140,24 +140,24 @@ export const PROFESSORS = [
   },
   {
     name: 'Rafael Mendes',
-    role: 'Especialista em processos comerciais',
+    role: null,
     image: null,
     initials: 'RM',
-    bio: 'Professor convidado responsável pela aula sobre como estruturar uma máquina de vendas que funcione além do dono — funil, abordagem, follow-up e conversão com método. Minibiografia completa em breve.',
+    bio: 'A confirmar.',
   },
   {
     name: 'Gerson',
-    role: 'Especialista em processos e operação',
+    role: null,
     image: null,
     initials: 'GE',
-    bio: 'Professor convidado responsável pela aula sobre estruturação de processos para a empresa funcionar sem depender do dono — mapear, documentar e delegar rotinas. Minibiografia completa em breve.',
+    bio: 'A confirmar.',
   },
   {
     name: 'Clecio Albino',
-    role: 'Especialista em gestão e indicadores',
+    role: null,
     image: null,
     initials: 'CA',
-    bio: 'Professor convidado responsável pela aula de gestão na prática: rotinas, metas, indicadores e clareza operacional sem burocracia. Minibiografia completa em breve.',
+    bio: 'A confirmar.',
   },
 ]
 
@@ -218,8 +218,9 @@ export const OFFER_ITEMS = [
 ]
 
 export const PRICE = {
-  full: 'R$ 497',
-  installments: '10x de R$ XX,XX',
+  installments: '10x de R$ 59,96',
+  cash: 'R$ 497',
+  cashNote: 'à vista · condição especial',
 }
 
 export const FAQ = [

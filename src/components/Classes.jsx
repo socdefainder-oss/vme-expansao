@@ -1,4 +1,3 @@
-import { User } from 'lucide-react'
 import { CLASSES } from '../data.js'
 import SectionHeading from './SectionHeading.jsx'
 import Reveal from './Reveal.jsx'
@@ -34,21 +33,6 @@ export default function Classes() {
                 {cls.title}
               </h3>
               <p className="mt-3 flex-1 text-[14.5px] leading-relaxed text-white/60">{cls.text}</p>
-
-              {cls.teacher ? (
-                <div className="mt-6 flex items-center gap-2.5 border-t border-white/[0.06] pt-5">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gold/10 text-gold">
-                    <User className="h-3.5 w-3.5" strokeWidth={2} />
-                  </span>
-                  <span className="text-sm text-white/70">
-                    Professor(a): <span className="font-medium text-white">{cls.teacher}</span>
-                  </span>
-                </div>
-              ) : (
-                <div className="mt-6 flex items-center gap-2.5 border-t border-white/[0.06] pt-5">
-                  <span className="text-sm italic text-white/40">Professor a confirmar</span>
-                </div>
-              )}
             </Reveal>
           ))}
         </div>

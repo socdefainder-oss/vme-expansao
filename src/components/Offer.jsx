@@ -29,12 +29,15 @@ export default function Offer() {
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-gold/80">
                 Turma 2026 · Vagas limitadas
               </p>
-              <div className="mt-6 flex items-end justify-center gap-2">
-                <span className="font-sans text-5xl font-bold tracking-tight text-white sm:text-6xl">
-                  {PRICE.full}
+              <div className="mt-6">
+                <span className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                  {PRICE.installments}
                 </span>
               </div>
-              <p className="mt-2 text-base text-white/55">ou {PRICE.installments}</p>
+              <p className="mt-3 text-base text-white/70">
+                ou <span className="font-semibold text-white">{PRICE.cash}</span>{' '}
+                <span className="text-white/55">{PRICE.cashNote}</span>
+              </p>
 
               <div className="mt-8">
                 <CTAButton className="w-full" />
