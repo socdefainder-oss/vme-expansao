@@ -1,9 +1,14 @@
 import { ArrowRight } from 'lucide-react'
-import { INSCRICAO_LINK } from '../data.js'
 
-export default function CTAButton({ children = 'Quero garantir minha vaga', className = '' }) {
+// Por padrão, leva para a seção de preço (#oferta).
+// Passe href={INSCRICAO_LINK} apenas no botão dentro da própria seção de oferta.
+export default function CTAButton({
+  children = 'Quero garantir minha vaga',
+  className = '',
+  href = '#oferta',
+}) {
   return (
-    <a href={INSCRICAO_LINK} className={`btn-primary group ${className}`}>
+    <a href={href} className={`btn-primary group ${className}`}>
       {children}
       <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
     </a>

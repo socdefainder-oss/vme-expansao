@@ -14,7 +14,6 @@ import Faq from './components/Faq.jsx'
 import Footer from './components/Footer.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import TermsOfUse from './pages/TermsOfUse.jsx'
-import { INSCRICAO_LINK } from './data.js'
 
 function Home() {
   return (
@@ -39,7 +38,7 @@ function Home() {
       {/* CTA fixo no mobile */}
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-ink-950/90 p-3 backdrop-blur-xl lg:hidden">
         <a
-          href={INSCRICAO_LINK}
+          href="#oferta"
           className="flex w-full items-center justify-center rounded-full bg-gold-grad py-3.5 text-sm font-semibold text-ink-950"
         >
           Quero garantir minha vaga

@@ -1,5 +1,5 @@
 import { Check, ShieldCheck, Lock } from 'lucide-react'
-import { OFFER_ITEMS, PRICE } from '../data.js'
+import { OFFER_ITEMS, PRICE, INSCRICAO_LINK } from '../data.js'
 import CTAButton from './CTAButton.jsx'
 import Reveal from './Reveal.jsx'
 
@@ -40,7 +40,7 @@ export default function Offer() {
               </p>
 
               <div className="mt-8">
-                <CTAButton className="w-full" />
+                <CTAButton href={INSCRICAO_LINK} className="w-full" />
               </div>
               <p className="mt-4 flex items-center justify-center gap-1.5 text-sm text-white/45">
                 <Lock className="h-3.5 w-3.5" /> Inscrição segura. Vagas limitadas.

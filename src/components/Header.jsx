@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { INSCRICAO_LINK } from '../data.js'
 
 const NAV = [
   { label: 'O que é', href: '#o-que-e' },
@@ -53,7 +52,7 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <a
-            href={INSCRICAO_LINK}
+            href="#oferta"
             className="hidden rounded-full bg-gold-grad px-5 py-2.5 text-sm font-semibold text-ink-950 transition-all hover:brightness-110 sm:inline-flex"
           >
             Garantir minha vaga
@@ -88,7 +87,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href={INSCRICAO_LINK}
+            href="#oferta"
             onClick={() => setOpen(false)}
             className="mt-2 rounded-full bg-gold-grad px-5 py-3 text-center text-sm font-semibold text-ink-950"
           >
