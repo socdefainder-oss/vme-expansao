@@ -22,15 +22,23 @@ export const BRAND = {
   name: 'VME EXPANSÃO',
   institute: 'Instituto AlphaMind',
   address: 'Avenida Juruá, 376, Alphaville, Barueri/SP',
-  startDate: '04/08/2026',
-  startDateLong: '04 de agosto de 2026',
+  // A Turma 01 começou em 04/08/2026 e está em andamento — por isso a data de
+  // início saiu dos selos do Hero e do rodapé, que anunciavam um lançamento já
+  // passado. Quando a próxima turma tiver data, preencha `nextClassStart` e
+  // recoloque o selo em Hero.jsx e a linha "Início em..." em Footer.jsx.
+  currentClassStart: '04/08/2026',
+  nextClassStart: null,
   weekday: 'Terças às 20h',
+  frequency: 'Quinzenal',
   meetings: '8 encontros ao vivo',
 }
 
+// Atenção: não é usado por nenhum componente — o Hero mantém sua própria lista
+// de selos, com ícones, em src/components/Hero.jsx. Mantido aqui apenas em
+// sincronia com ela.
 export const HERO_SEALS = [
   '8 encontros ao vivo',
-  'Início em 04/08/2026',
+  'Encontros quinzenais',
   'Terças às 20h',
   'Instituto AlphaMind — Alphaville, Barueri/SP',
 ]
@@ -59,17 +67,21 @@ export const PILLARS = [
   },
 ]
 
+// Ordem e datas conforme o calendário real da Turma 01 (quinzenal, terças às 20h).
+// `date` documenta o cronograma; hoje não é renderizado em nenhum componente.
+// Os nomes em `teacher` devem bater com os de PROFESSORS.
 export const CLASSES = [
   {
     n: 1,
-    title:
-      'Você não tem problema de vendas. Você tem problema de posicionamento.',
-    text: 'Derruba a crença de que vender pouco é falta de cliente ou de investimento. Mostra que sem posicionamento claro o empresário compete por preço e atrai o cliente errado. Entrega diagnóstico prático aplicável no mesmo dia.',
-    teacher: 'Daniel Brunet',
-    tag: 'Posicionamento',
+    date: '04/08/2026',
+    title: 'O empresário que não lidera, vira refém dos funcionários',
+    text: 'Trabalha o desenvolvimento da liderança no dia a dia da empresa. Comunicação, autoridade, cultura e como engajar equipe sem precisar estar em cima de todo mundo.',
+    teacher: 'Cleiton Pinheiro',
+    tag: 'Liderança',
   },
   {
     n: 2,
+    date: '25/08/2026',
     title: 'Como criar uma máquina de vendas sem depender só de você',
     text: 'Mostra como estruturar um processo de vendas que funcione além do dono. Aborda funil, abordagem, follow-up e conversão com método — não no improviso.',
     teacher: 'Rafael Mendes',
@@ -77,42 +89,49 @@ export const CLASSES = [
   },
   {
     n: 3,
+    date: '01/09/2026',
+    title:
+      'Você não tem problema de vendas. Você tem problema de posicionamento.',
+    text: 'Derruba a crença de que vender pouco é falta de cliente ou de investimento. Mostra que sem posicionamento claro o empresário compete por preço e atrai o cliente errado. Entrega diagnóstico prático aplicável no mesmo dia.',
+    teacher: 'Daniel Brunet',
+    tag: 'Posicionamento',
+  },
+  {
+    n: 4,
+    date: '15/09/2026',
+    title: 'Como contratar certo e parar de montar e desmontar equipe',
+    text: 'Ensina critérios práticos de contratação alinhados à cultura e ao momento do negócio. Foca em evitar os erros mais comuns que geram rotatividade e frustração.',
+    teacher: 'Drª Érica Belon',
+    tag: 'Equipe',
+  },
+  {
+    n: 5,
+    date: '29/09/2026',
+    title:
+      'Saia da operação: como estruturar processos para a empresa funcionar sem você',
+    text: 'Mostra como mapear, documentar e delegar rotinas. O objetivo é que o empresário pare de ser o gargalo e comece a agir como gestor de verdade.',
+    teacher: 'Gerson Ribeiro de Paula',
+    tag: 'Processos',
+  },
+  {
+    n: 6,
+    date: '13/10/2026',
     title: 'Por que sua empresa não cresce: o diagnóstico que ninguém faz',
     text: 'Leva o empresário a enxergar os gargalos reais do negócio — que muitas vezes não são os que ele imagina. Mistura visão estratégica com autoavaliação honesta.',
     teacher: null,
     tag: 'Diagnóstico',
   },
   {
-    n: 4,
-    title: 'Como contratar certo e parar de montar e desmontar equipe',
-    text: 'Ensina critérios práticos de contratação alinhados à cultura e ao momento do negócio. Foca em evitar os erros mais comuns que geram rotatividade e frustração.',
-    teacher: 'Drª Erika Belon',
-    tag: 'Equipe',
-  },
-  {
-    n: 5,
-    title: 'O empresário que não lidera, vira refém dos funcionários',
-    text: 'Trabalha o desenvolvimento da liderança no dia a dia da empresa. Comunicação, autoridade, cultura e como engajar equipe sem precisar estar em cima de todo mundo.',
-    teacher: 'Cleiton Pinheiro',
-    tag: 'Liderança',
-  },
-  {
-    n: 6,
-    title:
-      'Saia da operação: como estruturar processos para a empresa funcionar sem você',
-    text: 'Mostra como mapear, documentar e delegar rotinas. O objetivo é que o empresário pare de ser o gargalo e comece a agir como gestor de verdade.',
-    teacher: 'Gerson',
-    tag: 'Processos',
-  },
-  {
     n: 7,
+    date: '27/10/2026',
     title: 'Gestão na prática: rotinas, indicadores e clareza operacional',
     text: 'Ensina a criar uma gestão simples e funcional. Reuniões, metas, indicadores básicos e rotinas que dão previsibilidade e controle sem burocracia.',
-    teacher: 'Clecio Albino',
+    teacher: 'Clécio Albino',
     tag: 'Gestão',
   },
   {
     n: 8,
+    date: '10/11/2026',
     title:
       'Fluxo de caixa, lucro e estabilidade: o empresário que não domina o financeiro não escala',
     text: 'Desmistifica o financeiro para quem não é da área. Aborda fluxo de caixa, precificação, margem e lucro real — com linguagem prática e sem jargão contábil.',
@@ -243,7 +262,7 @@ export const FAQ = [
   },
   {
     q: 'Quando começa?',
-    a: 'A primeira aula está prevista para 04/08/2026, terça-feira, às 20h.',
+    a: 'A Turma 01 começou em 04/08/2026 e está em andamento, com encontros quinzenais às terças-feiras, às 20h. Para saber a data de início da próxima turma, fale com a nossa equipe pelo WhatsApp (11) 91930-3765.',
   },
   {
     q: 'Onde será?',

@@ -2,11 +2,13 @@ import { Radio, Repeat, Clock, CalendarCheck, MapPin, PlayCircle, Layers } from 
 import SectionHeading from './SectionHeading.jsx'
 import Reveal from './Reveal.jsx'
 
+// O item "Início" saiu porque a Turma 01 já começou (04/08/2026).
+// Recoloque com a data da próxima turma quando ela for definida.
 const ITEMS = [
   { icon: Radio, label: 'Formato', value: 'Aulas ao vivo' },
   { icon: Repeat, label: 'Frequência', value: 'Quinzenal' },
   { icon: Clock, label: 'Dia e horário', value: 'Terças às 20h' },
-  { icon: CalendarCheck, label: 'Início', value: '04 de agosto de 2026' },
+  { icon: CalendarCheck, label: 'Duração', value: '4 meses · de agosto a novembro' },
   { icon: MapPin, label: 'Local', value: 'Instituto AlphaMind · Av. Juruá, 376, Alphaville, Barueri/SP' },
   { icon: PlayCircle, label: 'Gravações', value: 'Disponíveis na plataforma após cada aula' },
   { icon: Layers, label: 'Total', value: '8 encontros' },

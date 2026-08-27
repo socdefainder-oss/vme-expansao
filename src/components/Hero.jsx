@@ -1,9 +1,11 @@
 import { Calendar, Clock, MapPin, Users } from 'lucide-react'
 import CTAButton from './CTAButton.jsx'
 
+// A data de início saiu daqui porque a Turma 01 já começou (04/08/2026).
+// Quando a próxima turma tiver data, volte com { icon: Calendar, label: 'Início em ...' }.
 const SEALS = [
   { icon: Users, label: '8 encontros ao vivo' },
-  { icon: Calendar, label: 'Início em 04/08/2026' },
+  { icon: Calendar, label: 'Encontros quinzenais' },
   { icon: Clock, label: 'Terças às 20h' },
   { icon: MapPin, label: 'Instituto AlphaMind — Alphaville, Barueri/SP' },
 ]

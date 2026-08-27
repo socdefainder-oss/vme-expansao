@@ -44,13 +44,15 @@ export default function Footer() {
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-gold/70" strokeWidth={1.7} />
                 {BRAND.address}
               </li>
+              {/* A linha "Início em ..." saiu porque a Turma 01 já começou.
+                  Recoloque quando BRAND.nextClassStart tiver data. */}
               <li className="flex items-center gap-2.5">
                 <Calendar className="h-4 w-4 flex-shrink-0 text-gold/70" strokeWidth={1.7} />
-                Início em {BRAND.startDateLong}
+                {BRAND.meetings}
               </li>
               <li className="flex items-center gap-2.5">
                 <Clock className="h-4 w-4 flex-shrink-0 text-gold/70" strokeWidth={1.7} />
-                {BRAND.weekday} · {BRAND.meetings}
+                {BRAND.weekday} · {BRAND.frequency}
               </li>
             </ul>
           </div>
