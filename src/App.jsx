@@ -14,6 +14,7 @@ import Faq from './components/Faq.jsx'
 import Footer from './components/Footer.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import TermsOfUse from './pages/TermsOfUse.jsx'
+import PesquisaMeioPercurso from './pages/PesquisaMeioPercurso.jsx'
 
 function Home() {
   return (
@@ -54,5 +55,7 @@ export default function App() {
 
   if (path === '/politica-de-privacidade') return <PrivacyPolicy />
   if (path === '/termos-de-uso') return <TermsOfUse />
+  // Tela de coleta do NPS, projetada no telão ao final da aula.
+  if (path === '/pesquisameiopercurso') return <PesquisaMeioPercurso />
   return <Home />
 }
