@@ -82,6 +82,31 @@ Preencha a célula de **alunos matriculados** no `Painel` — é o divisor da ta
 
 ---
 
+## A tela de coleta
+
+A pesquisa é aplicada **na sala**, não por WhatsApp. Projete no telão, nos últimos
+cinco minutos da aula:
+
+**https://vme-expansao.vercel.app/pesquisameiopercurso**
+
+A página tem o QR da Avaliação de Meio de Percurso e um cronômetro de 60 segundos.
+Quem conduz a aula clica em **Começar** e fica em silêncio até zerar — o silêncio é o
+que faz a taxa de resposta, e sem cronômetro ele vira "uns instantinhos".
+
+| Detalhe | |
+|:--|:--|
+| Tela cheia | botão no canto superior direito, ou F11 |
+| Controle remoto | barra de espaço e as teclas de avanço iniciam e pausam |
+| Sem internet na sala | a página abre mesmo assim: o QR é SVG embutido, sem CDN |
+| Indexação | a rota injeta `noindex` — é página operacional, não marketing |
+
+O código está em [`src/pages/PesquisaMeioPercurso.jsx`](../../src/pages/PesquisaMeioPercurso.jsx)
+e a matriz do QR em [`src/pages/qrMeioPercurso.js`](../../src/pages/qrMeioPercurso.js).
+Para outra turma ou outro formulário, gere a matriz de novo em vez de editar à mão —
+o cabeçalho do arquivo explica como. Os PNGs para colar em slide estão em [`qr/`](qr/).
+
+---
+
 ## Ações imediatas
 
 | Quando | O quê |
